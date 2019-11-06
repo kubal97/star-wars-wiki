@@ -1,14 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './styles.scss';
 import arrowRight from '../../assets/arrow-right.png';
-import Nav from '../Nav';
 // eslint-disable-next-line require-jsdoc
 class Home extends React.Component {
 // eslint-disable-next-line require-jsdoc
   render() {
     return (
       <div className="home">
-        <Nav />
         <div className="container">
           <h3 className="container__title">explore the dark side of...</h3>
           <h1 className="container__star">star wars</h1>
@@ -17,7 +16,7 @@ class Home extends React.Component {
               We come to the rescue to remind you of the details
               of individual heroes, planets, vehicles and
               many other curiosities</h4>
-          <div className="container__explore">
+          <Link className="container__explore" to="/films">
             <p className="container__explore--title">Explore</p>
             <button className="container__explore--button">
               <img
@@ -25,7 +24,7 @@ class Home extends React.Component {
                 src={arrowRight}
                 alt="Arrow right"/>
             </button>
-          </div>
+          </Link>
         </div>
       </div>
     );

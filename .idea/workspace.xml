@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/index.js" afterDir="false" />
@@ -70,7 +70,8 @@
       <updated>1572025937068</updated>
       <workItem from="1572025940186" duration="2642000" />
       <workItem from="1572101562018" duration="4751000" />
-      <workItem from="1572279340160" duration="7096000" />
+      <workItem from="1572279340160" duration="7285000" />
+      <workItem from="1573064793262" duration="8293000" />
     </task>
     <servers />
   </component>
