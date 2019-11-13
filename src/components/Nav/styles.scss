@@ -11,6 +11,10 @@
     margin: 50px 100px;
     padding: 0;
 
+    li{
+      width: 100px;
+    }
+
     .item{
       color: #FFFFFF;
       font-family: 'Neucha';
@@ -20,6 +24,7 @@
     }
 
     .logo{
+      width: 400px;
       margin-top: -30px;
       flex-direction: column;
       text-transform: uppercase;
