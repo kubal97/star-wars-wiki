@@ -21,21 +21,21 @@ class Film extends React.Component {
     const {image, film} = this.props;
     return (
       <div>
-        <a onClick={this.onOpenFilm.bind(this)} className="films__list--button">
+        <a onClick={this.onOpenFilm.bind(this)} className="film">
           <img
-            className="films__list--poster"
+            className="film__poster"
             src={image}
             alt="poster"
           />
           {/* eslint-disable-next-line react/prop-types */}
-          <div className="films__list--item" key={film.episode_id}>
+          <div className="film__item" key={film.episode_id}>
             {/* eslint-disable-next-line react/prop-types */}
             {film.title}
           </div>
         </a>
         {this.state.isFilmOpen ?
           // eslint-disable-next-line max-len
-          <FilmInfo details={film} isFilmOpen={this.onOpenFilm.bind(this)} /> : null}
+          <FilmInfo details={film} image={image} isFilmOpen={this.onOpenFilm.bind(this)} /> : null}
       </div>
     );
   }

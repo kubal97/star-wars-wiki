@@ -51,78 +51,178 @@
     font-size: 25px;
     width: 100%;
     height: 100%;
-
-    &--button, &--button:visited{
-      cursor: pointer;
-      color: #FFFFFF;
-      text-decoration: none;
-      margin: 30px 50px;
-      transform: scale(1);
-      transition: transform 0.1s ease-out;
-    }
-
-    &--button:hover{
-      transform: scale(1.1);
-      transition: transform 0.3s ease-in;
-    }
-
-
-    &--poster{
-      width: auto;
-      height: 200px;
-      margin: 20px auto;
-    }
-
-    &--item{
-      margin: auto 50px;
-      white-space: nowrap;
-    }
   }
 }
 
+.film{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 30px 50px;
+  transform: scale(1);
+  transition: transform 0.1s ease-out;
+
+  &:visited{
+    text-decoration: none;
+  }
+
+  &:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in;
+  }
+
+  &__poster{
+    width: auto;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  &__item{
+    margin: auto 50px;
+    white-space: nowrap;
+  }
+}
+
+
 .singleFilm{
   position: absolute;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background:
+    linear-gradient(
+                    rgba(0, 0, 0, 0.9),
+                    rgba(0, 0, 0, 0.9)
+    ),
+    url("../../assets/film-description.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 200px;
   color: #fff;
+  display: flex;
+  flex-direction: row;
+
+  &__left{
+    flex-direction: column;
+    width: 30vw;
+
+    img{
+      height: 500px;
+      width: auto;
+    }
+  }
+
+  &__right{
+    flex-direction: column;
+    width: 70vw;
+
+    .title{
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-family: 'Righteous';
+      font-size: 48px;
+      text-align: start;
+      margin-left: 100px;
+    }
+
+    .containerInfo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 50px 100px;
+
+      .content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20px;
+
+        &__inside{
+          justify-content: space-between;
+
+          .key{
+            font-family: 'Righteous';
+            font-weight: normal;
+            font-size: 18px;
+            color: #FFFFFF;
+            text-align: start;
+          }
+
+          .value{
+            font-family: 'Neucha';
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 26px;
+            color: #FFFFFF;
+            text-align: end;
+          }
+        }
+      }
+    }
+
+    .back{
+      display: flex;
+      flex-direction: row;
+      margin-top: 50px;
+      align-items: center;
+      text-decoration: none;
+      justify-content: flex-end;
+      margin-right: 100px;
+
+      &__title{
+        font-family: 'Neucha';
+        font-size: 30px;
+        font-weight: 300;
+        color: #E1AA1B;
+        margin-left: 20px;
+      };
+
+      &__button{
+        width: 70px;
+        height: 70px;
+        border-radius: 50px;
+        background-color: #E1AA1B;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+          .arrow {
+            animation: arrow-left 1s infinite ease;
+          }
+        }
+
+        .arrow{
+          width: 30px;
+          height: auto;
+        }
+      }
+    }
+  }
 }
 
 @keyframes vibrate-3 {
-  0% {
-    transform: translate(0) rotate(3deg);
-  }
-  10% {
-    transform: translate(-2px, -2px);
-  }
-  20% {
-    transform: translate(2px, -2px) rotate(-4deg);
-  }
-  30% {
-    transform: translate(-2px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(2px, 2px);
-  }
-  50% {
-    transform: translate(-2px, -2px) rotate(0deg);
-  }
-  60% {
-    transform: translate(2px, -2px);
-  }
-  70% {
-    transform: translate(-2px, 2px);
-  }
-  80% {
-    transform: translate(-2px, -2px) rotate(5deg);
-  }
-  90% {
-    transform: translate(2px, -2px);
-  }
-  100% {
-    transform: translate(0) rotate(0deg);
-  }
+  0% {transform: translate(0) rotate(3deg);}
+  10% {transform: translate(-2px, -2px);}
+  20% {transform: translate(2px, -2px) rotate(-4deg);}
+  30% {transform: translate(-2px, 2px) rotate(0deg);}
+  40% {transform: translate(2px, 2px);}
+  50% {transform: translate(-2px, -2px) rotate(0deg);}
+  60% {transform: translate(2px, -2px);}
+  70% {transform: translate(-2px, 2px);}
+  80% {transform: translate(-2px, -2px) rotate(5deg);}
+  90% {transform: translate(2px, -2px);}
+  100% {transform: translate(0) rotate(0deg);}
+}
+
+@keyframes arrow-left {
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(-10px, 0px);}
+  75% {transform: translate(5px, 0px);}
+  100% {transform: translate(0px, 0px);}
 }

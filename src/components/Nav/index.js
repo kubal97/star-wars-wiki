@@ -10,15 +10,15 @@ class Nav extends React.Component {
         <nav className="nav">
           <ul className="ul">
             <li><Link className="item" to="/films">Films</Link></li>
-            <li><a className="item" >People</a></li>
-            <li><a className="item" >Planets</a></li>
+            <li><Link className="item" to="./">People</Link></li>
+            <li><Link className="item" to="./">Planets</Link></li>
             <Link className="logo" to="/">
               <div className="logo__upper">star wars</div>
               <div className="logo__lower">wiki</div>
             </Link>
-            <li><a className="item" >Species</a></li>
-            <li><a className="item" >Starships</a></li>
-            <li><a className="item">Vehicles</a></li>
+            <li><Link className="item" to="./">Species</Link></li>
+            <li><Link className="item" to="./">Starships</Link></li>
+            <li><Link className="item" to="./">Vehicles</Link></li>
           </ul>
         </nav>
       </div>
