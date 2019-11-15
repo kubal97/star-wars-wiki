@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 // import moment from 'moment';
 import './styles.scss';
+import Film from './film';
 import First from '../../assets/1.png';
 import Second from '../../assets/2.jpg';
 import Third from '../../assets/3.jpg';
@@ -60,16 +61,7 @@ class Films extends React.Component {
               <div className="films__list">
                 {films.map((film) =>
                 // eslint-disable-next-line max-len,react/jsx-key
-                  <a href='#' className="films__list--button">
-                    <img
-                      className="films__list--poster"
-                      src={images[film.episode_id-1]}
-                      alt="poster"
-                    />
-                    <div className="films__list--item" key={film.episode_id}>
-                      {film.title}
-                    </div>
-                  </a>,
+                  <Film film={film} image={images[film.episode_id-1]} />,
                 )}
               </div>
           }
