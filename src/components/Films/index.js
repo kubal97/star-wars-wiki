@@ -61,7 +61,7 @@ class Films extends React.Component {
               <div className="films__list">
                 {films.map((film) =>
                 // eslint-disable-next-line max-len,react/jsx-key
-                  <Film film={film} image={images[film.episode_id-1]} />,
+                  <Film key={film.episode_id} film={film} image={images[film.episode_id-1]} />,
                 )}
               </div>
           }

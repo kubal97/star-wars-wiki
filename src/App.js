@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Films from './components/Films';
 import Film from './components/Films/film';
+import People from './components/People';
 // eslint-disable-next-line require-jsdoc
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/films" component={Films} />
         <Route exact path="/film" component={Film} />
+        <Route exact path="/people" component={People} />
       </Switch>
     </Router>
   );

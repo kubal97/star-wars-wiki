@@ -1,10 +1,10 @@
+/* eslint-disable */
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './styles.scss';
 import arrowRight from '../../assets/arrow-right.png';
-// eslint-disable-next-line require-jsdoc
+
 class Home extends React.Component {
-// eslint-disable-next-line require-jsdoc
   render() {
     return (
       <div className="home">
