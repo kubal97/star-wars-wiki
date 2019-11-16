@@ -131,36 +131,34 @@
 
     .containerInfo{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
-      margin: 50px 100px;
+      margin: 50px 100px 0 100px;
 
       .content{
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 0 20px;
+        justify-content: flex-end;
 
-        &__inside{
-          justify-content: space-between;
+        .key{
+           font-family: 'Neucha';
+           font-weight: normal;
+           font-size: 20px;
+           width: 20%;
+           color: #FFFFFF;
+           text-align: start;
+           padding-top: 10px;
+         }
 
-          .key{
-            font-family: 'Righteous';
-            font-weight: normal;
-            font-size: 18px;
-            color: #FFFFFF;
-            text-align: start;
-          }
-
-          .value{
-            font-family: 'Neucha';
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 26px;
-            color: #FFFFFF;
-            text-align: end;
-          }
+        .value{
+          font-family: 'Righteous';
+          font-weight: normal;
+          font-size: 25px;
+          width: 80%;
+          line-height: 26px;
+          color: #FFFFFF;
+          text-align: start;
         }
       }
     }
@@ -172,7 +170,12 @@
       align-items: center;
       text-decoration: none;
       justify-content: flex-end;
-      margin-right: 100px;
+
+      &:hover{
+        .arrow {
+          animation: arrow-left 1s infinite ease;
+        }
+      }
 
       &__title{
         font-family: 'Neucha';
@@ -190,12 +193,6 @@
         outline: none;
         border: none;
         cursor: pointer;
-
-        &:hover{
-          .arrow {
-            animation: arrow-left 1s infinite ease;
-          }
-        }
 
         .arrow{
           width: 30px;

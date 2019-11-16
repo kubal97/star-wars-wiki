@@ -20,42 +20,37 @@ class FilmInfo extends React.Component {
           <div className="title">{details.title}</div>
           <div className="containerInfo">
             <div className="content">
-              <div className="content__inside">
-                <p className="key">Created:</p>
-                <p className="key">Director:</p>
-                <p className="key">Release day:</p>
-              </div>
-              <div className="content__inside">
-                {/* eslint-disable-next-line react/prop-types */}
-                <p className="value">{details.created.replace(re, '')}</p>
-                {/* eslint-disable-next-line react/prop-types */}
-                <p className="value">{details.director}</p>
-                {/* eslint-disable-next-line react/prop-types */}
-                <p className="value">{details.release_date.replace(re, '')}</p>
-              </div>
+              <p className="key">Director:</p>
+              {/* eslint-disable-next-line react/prop-types */}
+              <p className="value">{details.director}</p>
             </div>
             <div className="content">
-              <div className="content__inside">
-                <p className="key">Edited:</p>
-                <p className="key">Producer:</p>
-              </div>
-              <div className="content__inside">
-                {/* eslint-disable-next-line react/prop-types */}
-                <p className="value">{details.edited.replace(re, '')}</p>
-                {/* eslint-disable-next-line react/prop-types */}
-                <p className="value">{details.producer}</p>
-              </div>
+              <p className="key">Release day:</p>
+              {/* eslint-disable-next-line react/prop-types */}
+              <p className="value">{details.release_date.replace(re, '')}</p>
+            </div>
+            <div className="content">
+              <p className="key">Producer:</p>
+              {/* eslint-disable-next-line react/prop-types */}
+              <p className="value">{details.producer}</p>
+            </div>
+            <div className="content">
+              <p className="key">Description: </p>
+              {/* eslint-disable-next-line react/prop-types */}
+              <p className="value">{details.opening_crawl}</p>
+            </div>
+            <div className="content">
+              <Link onClick={isFilmOpen} className="back" to="/films">
+                <button className="back__button">
+                  <img
+                    className="arrow"
+                    src={arrowLeft}
+                    alt="Arrow left"/>
+                </button>
+                <p className="back__title">Go back</p>
+              </Link>
             </div>
           </div>
-          <Link onClick={isFilmOpen} className="back" to="/films">
-            <button className="back__button">
-              <img
-                className="arrow"
-                src={arrowLeft}
-                alt="Arrow left"/>
-            </button>
-            <p className="back__title">Go back</p>
-          </Link>
         </div>
       </div>
     );
