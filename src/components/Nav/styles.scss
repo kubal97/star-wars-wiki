@@ -1,0 +1,52 @@
+.nav{
+  position: absolute;
+  z-index: 100;
+  height: 50px;
+  width: 100%;
+
+  .ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 100px;
+    padding: 0;
+
+    li{
+      width: 100px;
+      list-style: none;
+      cursor: pointer;
+    }
+
+    .item{
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      font-size: 25px;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    .logo{
+      width: 400px;
+      margin-top: -30px;
+      flex-direction: column;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+
+      &__upper{
+        font-family: 'Righteous';
+        font-size: 55px;
+        font-weight: 500;
+        color: #E1AA1B;
+      }
+
+      &__lower{
+        font-family: 'Righteous';
+        font-size: 36px;
+        font-weight: 500;
+        color: #E1AA1B;
+        letter-spacing: 20px;
+      }
+    }
+  }
+}
