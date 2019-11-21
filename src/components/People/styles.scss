@@ -1,5 +1,4 @@
 .people{
-  position: absolute;
   top: 0;
   left: 0;
   margin: 0;
@@ -15,6 +14,15 @@
   text-align: center;
   z-index: 0;
   color: #FFFFFF;
+
+  &__header{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    background-color: #000000;
+  }
 
   &__fade, &__bcg{
     position: fixed;
@@ -50,8 +58,7 @@
     }
   }
 
-  .container{
-    position: absolute;
+  &__container{
     z-index: 2;
     top: 0;
     width: 100%;
@@ -60,6 +67,47 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  &__page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    margin-top: -20px;
+
+    &--button{
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      background-color: #000000;
+      font-size: 25px;
+      font-weight: 600;
+      text-align: left;
+      margin: auto 10px;
+      border: none;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      &:focus{}
+      outline: none;
+      border: none;
+    }
+
+    .singlePage{
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      font-size: 20px;
+      margin: auto 10px;
+    }
+
+    .active{
+      color: #E1AA1B;
+      border-bottom: 1px solid #E1AA1B;
+    }
   }
 }
 
