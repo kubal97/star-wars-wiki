@@ -23,7 +23,5 @@
         "react"
     ],
     "rules": {
-        "react/prop-types": 0,
-        "require-jsdoc" : 0
     }
 }

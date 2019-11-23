@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import './styles.scss';
 import Person from './person';
-import Vader from '../../assets/people.png';
 import Loader from '../../assets/loader.png';
 
 // eslint-disable-next-line require-jsdoc
@@ -19,9 +18,9 @@ class People extends React.Component {
     };
   }
   // eslint-disable-next-line require-jsdoc
-
   onLoadPeoples() {
-    axios.get(`https://swapi.co/api/people/${this.state.current}`)
+    this.setState({loading: true});
+    axios.get(`https://swapi.co/api/people/?page=${this.state.current}`)
         .then((response) => {
           this.setState({
             loading: false,
@@ -33,55 +32,86 @@ class People extends React.Component {
         });
   }
 
+  // eslint-disable-next-line require-jsdoc
   onNextPage() {
     // eslint-disable-next-line react/no-direct-mutation-state
-    this.state.current = this.state.count ?
-      null :
-        this.setState({current: this.state.current + 1});
+    if (this.state.current < this.state.count) {
+      this.setState({
+        current: this.state.current + 1,
+      }, () => {
+        this.onLoadPeoples();
+      });
+    } else alert('There is no next page!');
   }
-
+  // eslint-disable-next-line require-jsdoc
   onPreviousPage() {
-    this.setState({current: this.state.current - 1});
+    if (this.state.current > 1) {
+      this.setState({
+        current: this.state.current - 1,
+      }, () => {
+        this.onLoadPeoples();
+      });
+    } else alert('There is no previous page!');
   }
-
-  pagination(pages) {
-    const active = this.state.current;
-    const page = [];
+  // eslint-disable-next-line require-jsdoc
+  onCurrentPage() {
+    const pages = Math.floor(this.state.count/10);
+    const restPages = [];
     for (let i = 1; i <= pages; i++) {
-      page.push(<p className="singlePage">{i}</p>);
+      restPages.push(<a
+        onClick={() => {
+          this.setState({
+            current: i,
+          }, () => {
+            this.onLoadPeoples();
+          });
+          console.log('Wewnatrz funkcji: ' + this.state.current);
+        }}
+        id={i}
+        // eslint-disable-next-line react/no-direct-mutation-state
+        className={this.state.current === i ?
+            'singlePage active' :
+            'singlePage'}>{i}</a>);
     }
-    return page[active-1];
+    return restPages;
   }
-
+  // eslint-disable-next-line require-jsdoc
   componentDidMount() {
     this.onLoadPeoples();
   }
 
   // eslint-disable-next-line require-jsdoc
   render() {
-    const {peoples, count} = this.state;
-    const pages = Math.floor(count/10);
+    const {peoples} = this.state;
+    console.log('Pozniej: ' + this.state.current);
     // eslint-disable-next-line max-len
     return (
       <div className="people">
+        <div className="people__bcg"/>
         <div className="people__header" />
-        <div className="people__fade" />
-        <img className="people__bcg" src={Vader} alt="Vader"/>
         {this.state.loading ?
               <div className="loader">
                 <img className="loader__image" src={Loader} alt="loader"/>
-              </div> : null
+              </div> :
+            <div>
+              <div className="people__container">
+                {peoples.map((person) =>
+                  <Person key={person.url} person={person} />
+                )}
+              </div>
+              <div className="people__page">
+                <button
+                  onClick={() => this.onPreviousPage()}
+                  className="people__page--button">Previous</button>
+                {this.onCurrentPage()}
+                {/* eslint-disable-next-line react/no-string-refs */}
+                {console.log(this.refs[this.state.current])}
+                <button
+                  onClick={() => this.onNextPage()}
+                  className="people__page--button">Next</button>
+              </div>
+            </div>
         }
-        <div className="people__container">
-          {peoples.map((person) =>
-            <Person key={person.url} person={person} />
-          )}
-        </div>
-        <div className="people__page">
-          <button className="people__page--button">Previous</button>
-          {this.pagination(pages)}
-          <button className="people__page--button">Next</button>
-        </div>
       </div>
     );
   }
