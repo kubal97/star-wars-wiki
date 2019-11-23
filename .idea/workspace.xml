@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ef01eaf-08de-40c4-aa7e-ef7dc47810dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/paths.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pnpTs.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/people.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/people.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/People/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/People/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/person.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/People/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +80,7 @@
       <workItem from="1574346982675" duration="5408000" />
       <workItem from="1574362948250" duration="6296000" />
       <workItem from="1574429214367" duration="1998000" />
-      <workItem from="1574518053098" duration="8300000" />
+      <workItem from="1574518053098" duration="8998000" />
     </task>
     <servers />
   </component>

@@ -34,8 +34,9 @@ class People extends React.Component {
 
   // eslint-disable-next-line require-jsdoc
   onNextPage() {
+    const pages = Math.ceil(this.state.count/10);
     // eslint-disable-next-line react/no-direct-mutation-state
-    if (this.state.current < this.state.count) {
+    if (this.state.current < pages) {
       this.setState({
         current: this.state.current + 1,
       }, () => {
@@ -55,7 +56,7 @@ class People extends React.Component {
   }
   // eslint-disable-next-line require-jsdoc
   onCurrentPage() {
-    const pages = Math.floor(this.state.count/10);
+    const pages = Math.ceil(this.state.count/10);
     const restPages = [];
     for (let i = 1; i <= pages; i++) {
       restPages.push(<a
@@ -65,7 +66,6 @@ class People extends React.Component {
           }, () => {
             this.onLoadPeoples();
           });
-          console.log('Wewnatrz funkcji: ' + this.state.current);
         }}
         id={i}
         // eslint-disable-next-line react/no-direct-mutation-state
@@ -83,7 +83,6 @@ class People extends React.Component {
   // eslint-disable-next-line require-jsdoc
   render() {
     const {peoples} = this.state;
-    console.log('Pozniej: ' + this.state.current);
     // eslint-disable-next-line max-len
     return (
       <div className="people">
