@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.scss';
+import PropTypes from 'prop-types';
 
 // eslint-disable-next-line require-jsdoc
 class Person extends React.Component {
@@ -8,6 +9,13 @@ class Person extends React.Component {
     super(props);
     this.state = {
       loading: true,
+    };
+  }
+
+  static get propTypes() {
+    return {
+      children: PropTypes.any,
+      onClickOut: PropTypes.func,
     };
   }
 

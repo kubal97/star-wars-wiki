@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import './styles.scss';
 
 class Nav extends React.Component {
@@ -9,16 +9,16 @@ class Nav extends React.Component {
       <div>
         <nav className="nav">
           <ul className="ul">
-            <li><Link className="item" to="/films">Films</Link></li>
-            <li><Link className="item" to="/people">People</Link></li>
-            <li><Link className="item" to="./">Planets</Link></li>
-            <Link className="logo" to="/">
+            <li><NavLink className="item" activeClassName="active" to="/films">Films</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/people">People</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/planets">Planets</NavLink></li>
+            <NavLink className="logo" to="/">
               <div className="logo__upper">star wars</div>
               <div className="logo__lower">wiki</div>
-            </Link>
-            <li><Link className="item" to="./">Species</Link></li>
-            <li><Link className="item" to="./">Starships</Link></li>
-            <li><Link className="item" to="./">Vehicles</Link></li>
+            </NavLink>
+            <li><NavLink className="item" activeClassName="active" to="/species">Species</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/starships">Starships</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/vehicles">Vehicles</NavLink></li>
           </ul>
         </nav>
       </div>

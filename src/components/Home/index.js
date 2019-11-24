@@ -8,6 +8,8 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home">
+        <div className="home__bcg"/>
+        <div className="home__clones"/>
         <div className="container">
           <h3 className="container__title">explore the dark side of...</h3>
           <h1 className="container__star">star wars</h1>

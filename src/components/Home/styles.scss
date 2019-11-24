@@ -8,9 +8,29 @@
   height: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-image: url("../../assets/home_bcg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+
+  &__bcg{
+    position: fixed;
+    z-index: -1;
+    background-image: url("../../assets/test.png");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    animation: animate 50s linear infinite;
+  }
+
+  &__clones{
+    background-image: url("../../assets/clons.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 950px;
+    height: 850px;
+    right: 50px;
+    bottom: -30px;
+  }
 
   .container{
     width: 40vw;
@@ -90,4 +110,13 @@
   50% {transform: translate(10px, 0px);}
   75% {transform: translate(-5px, 0px);}
   100% {transform: translate(0px, 0px);}
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
 }

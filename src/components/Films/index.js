@@ -11,6 +11,8 @@ import Fifth from '../../assets/5.png';
 import Sixth from '../../assets/6.png';
 import Seventh from '../../assets/7.jpg';
 import Loader from '../../assets/loader.png';
+import arrowLeft from '../../assets/arrow-left.png';
+import {Link} from 'react-router-dom';
 
 const images = [First, Second, Third, Fourth, Fifth, Sixth, Seventh];
 // eslint-disable-next-line require-jsdoc
@@ -63,6 +65,15 @@ class Films extends React.Component {
                 // eslint-disable-next-line max-len,react/jsx-key
                   <Film key={film.episode_id} film={film} image={images[film.episode_id-1]} />,
                 )}
+                <Link className="back" to="/">
+                  <button className="back__button">
+                    <img
+                      className="arrow"
+                      src={arrowLeft}
+                      alt="Arrow left"/>
+                  </button>
+                  <p className="back__title">Go back</p>
+                </Link>
               </div>
           }
         </div>
