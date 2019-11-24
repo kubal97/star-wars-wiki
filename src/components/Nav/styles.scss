@@ -25,6 +25,11 @@
       text-decoration: none;
     }
 
+    .active{
+      color: #E1AA1B;
+      border-bottom: 2px solid #E1AA1B;
+    }
+
     .logo{
       width: 400px;
       margin-top: -30px;
@@ -32,6 +37,7 @@
       text-transform: uppercase;
       text-align: center;
       text-decoration: none;
+      border-bottom: none !important;
 
       &__upper{
         font-family: 'Righteous';

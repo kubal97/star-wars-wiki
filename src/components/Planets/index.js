@@ -1,37 +1,36 @@
 import React from 'react';
 import axios from 'axios';
 import './styles.scss';
-import Person from './person';
 import Loader from '../../assets/loader.png';
+import Planet from './planet';
 
 // eslint-disable-next-line require-jsdoc
-class People extends React.Component {
+class Planets extends React.Component {
   // eslint-disable-next-line require-jsdoc
   constructor(props) {
     super(props);
     this.state = {
       loading: true,
       isLoaded: false,
-      peoples: [],
+      planets: [],
       count: 0,
       current: 1,
     };
   }
   // eslint-disable-next-line require-jsdoc
-  onLoadPeoples() {
+  onLoadPlanets() {
     this.setState({loading: true});
-    axios.get(`https://swapi.co/api/people/?page=${this.state.current}`)
+    axios.get(`https://swapi.co/api/planets/?page=${this.state.current}`)
         .then((response) => {
           this.setState({
             loading: false,
             isLoaded: true,
-            peoples: response.data.results,
+            planets: response.data.results,
             count: response.data.count,
           });
-          console.log(this.state.peoples);
+          console.log(this.state.planets);
         });
   }
-
   // eslint-disable-next-line require-jsdoc
   onNextPage() {
     const pages = Math.ceil(this.state.count/10);
@@ -40,7 +39,7 @@ class People extends React.Component {
       this.setState({
         current: this.state.current + 1,
       }, () => {
-        this.onLoadPeoples();
+        this.onLoadPlanets();
       });
     } else alert('There is no next page!');
   }
@@ -50,7 +49,7 @@ class People extends React.Component {
       this.setState({
         current: this.state.current - 1,
       }, () => {
-        this.onLoadPeoples();
+        this.onLoadPlanets();
       });
     } else alert('There is no previous page!');
   }
@@ -64,49 +63,47 @@ class People extends React.Component {
           this.setState({
             current: i,
           }, () => {
-            this.onLoadPeoples();
+            this.onLoadPlanets();
           });
         }}
         id={i}
         // eslint-disable-next-line react/no-direct-mutation-state
         className={this.state.current === i ?
-            'singlePage active' :
-            'singlePage'}>{i}</a>);
+                'singlePage active' :
+                'singlePage'}>{i}</a>);
     }
     return restPages;
   }
   // eslint-disable-next-line require-jsdoc
   componentDidMount() {
-    this.onLoadPeoples();
+    this.onLoadPlanets();
   }
 
   // eslint-disable-next-line require-jsdoc
   render() {
-    const {peoples} = this.state;
-    // eslint-disable-next-line max-len
+    const {planets} = this.state;
     return (
-      <div className="people">
-        <div className="people__bcg"/>
-        <div className="people__header" />
+      <div className="planets">
+        <div className="planets__bcg"/>
+        <div className="planets__header" />
         {this.state.loading ?
               <div className="loader">
                 <img className="loader__image" src={Loader} alt="loader"/>
               </div> :
             <div>
-              <div className="people__container">
-                {peoples.map((person) =>
-                  <Person key={person.url} person={person} />
+              <div className="planets__container">
+                {planets.map((planet) =>
+                  <Planet key={planet.url} planet={planet}/>
                 )}
               </div>
-              <div className="people__page">
+              <div className="planets__page">
                 <button
                   onClick={() => this.onPreviousPage()}
-                  className="people__page--button">Previous</button>
+                  className="planets__page--button">Previous</button>
                 {this.onCurrentPage()}
-                {/* eslint-disable-next-line react/no-string-refs */}
                 <button
                   onClick={() => this.onNextPage()}
-                  className="people__page--button">Next</button>
+                  className="planets__page--button">Next</button>
               </div>
             </div>
         }
@@ -114,4 +111,4 @@ class People extends React.Component {
     );
   }
 }
-export default People;
+export default Planets;
