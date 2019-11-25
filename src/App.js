@@ -13,11 +13,11 @@ function App() {
     <Router className="App">
       <Nav />
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/films" component={Films} />
-        <Route exact path="/film" component={Film} />
-        <Route exact path="/people" component={People} />
-        <Route exact path="/planets" component={Planets} />
+        <Route exact path="/star-wars-wiki/" component={Home} />
+        <Route exact path="/star-wars-wiki/films" component={Films} />
+        <Route exact path="/star-wars-wiki/film" component={Film} />
+        <Route exact path="/star-wars-wiki/people" component={People} />
+        <Route exact path="/star-wars-wiki/planets" component={Planets} />
       </Switch>
     </Router>
   );

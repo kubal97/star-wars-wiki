@@ -9,16 +9,16 @@ class Nav extends React.Component {
       <div>
         <nav className="nav">
           <ul className="ul">
-            <li><NavLink className="item" activeClassName="active" to="/films">Films</NavLink></li>
-            <li><NavLink className="item" activeClassName="active" to="/people">People</NavLink></li>
-            <li><NavLink className="item" activeClassName="active" to="/planets">Planets</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/films">Films</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/people">People</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/planets">Planets</NavLink></li>
             <NavLink className="logo" to="/">
               <div className="logo__upper">star wars</div>
               <div className="logo__lower">wiki</div>
             </NavLink>
-            <li><NavLink className="item" activeClassName="active" to="/species">Species</NavLink></li>
-            <li><NavLink className="item" activeClassName="active" to="/starships">Starships</NavLink></li>
-            <li><NavLink className="item" activeClassName="active" to="/vehicles">Vehicles</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/species">Species</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/starships">Starships</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/vehicles">Vehicles</NavLink></li>
           </ul>
         </nav>
       </div>

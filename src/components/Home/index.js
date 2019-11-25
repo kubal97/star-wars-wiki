@@ -18,7 +18,7 @@ class Home extends React.Component {
               We come to the rescue to remind you of the details
               of individual heroes, planets, vehicles and
               many other curiosities</h4>
-          <Link className="container__explore" to="/films">
+          <Link className="container__explore" to="/star-wars-wiki/films">
             <p className="container__explore--title">Explore</p>
             <button className="container__explore--button">
               <img
