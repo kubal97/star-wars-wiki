@@ -4,6 +4,13 @@ import {NavLink} from 'react-router-dom';
 import './styles.scss';
 
 class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHamburgerOpen: false,
+    };
+  }
+
   render() {
     return (
       <div>
@@ -19,6 +26,14 @@ class Nav extends React.Component {
             <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/species">Species</NavLink></li>
             <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/starships">Starships</NavLink></li>
             <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/vehicles">Vehicles</NavLink></li>
+            <button
+                onClick={() => this.setState({isHamburgerOpen: !this.state.isHamburgerOpen})}
+                className={this.state.isHamburgerOpen ? "hamburger hamburger--emphatic is-active" : "hamburger hamburger--emphatic"}
+                type="button">
+              <span className="hamburger-box">
+                <span className="hamburger-inner"></span>
+              </span>
+            </button>
           </ul>
         </nav>
       </div>
