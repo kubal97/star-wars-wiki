@@ -65,7 +65,7 @@ class Films extends React.Component {
                 // eslint-disable-next-line max-len,react/jsx-key
                   <Film key={film.episode_id} film={film} image={images[film.episode_id-1]} />,
                 )}
-                <Link className="back" to="/">
+                <Link className="back" to="/star-wars-wiki/">
                   <button className="back__button">
                     <img
                       className="arrow"

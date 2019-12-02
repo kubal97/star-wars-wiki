@@ -90,12 +90,10 @@ class Planets extends React.Component {
               <div className="loader">
                 <img className="loader__image" src={Loader} alt="loader"/>
               </div> :
-            <div>
-              <div className="planets__container">
-                {planets.map((planet) =>
-                  <Planet key={planet.url} planet={planet}/>
-                )}
-              </div>
+            <div className="planets__container">
+              {planets.map((planet) =>
+                <Planet key={planet.url} planet={planet}/>
+              )}
               <div className="planets__page">
                 <button
                   onClick={() => this.onPreviousPage()}

@@ -33,7 +33,7 @@ class FilmInfo extends React.Component {
               <p className="value">{details.opening_crawl}</p>
             </div>
             <div className="content">
-              <Link onClick={isFilmOpen} className="back" to="/films">
+              <Link onClick={isFilmOpen} className="back" to="/star-wars-wiki/films">
                 <button className="back__button">
                   <img
                     className="arrow"
