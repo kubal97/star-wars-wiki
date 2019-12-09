@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4ef01eaf-08de-40c4-aa7e-ef7dc47810dd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/People/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Planets/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Planets/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +82,8 @@
       <workItem from="1574518053098" duration="9115000" />
       <workItem from="1574613080815" duration="4628000" />
       <workItem from="1574838466666" duration="178000" />
-      <workItem from="1575283115508" duration="6685000" />
+      <workItem from="1575283115508" duration="6833000" />
+      <workItem from="1575888586868" duration="2054000" />
     </task>
     <servers />
   </component>

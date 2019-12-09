@@ -24,10 +24,12 @@
   &__clones{
     background-image: url("../../assets/clons.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     position: absolute;
-    z-index: 1;
-    width: 950px;
-    height: 850px;
+    z-index: -1;
+    width: 50vw;
+    height: 90vh;
     right: 50px;
     bottom: -30px;
   }
@@ -118,5 +120,74 @@
   }
   to {
     background-position: 0 100%;
+  }
+}
+
+@media only screen and (max-width: 1650px){
+  .home{
+    .container{
+      &__title{
+        font-size: 25px;
+      }
+
+      &__star{
+        font-size: 70px;
+        line-height: 70px;
+      }
+
+      &__description{
+        font-size: 20px;
+      }
+
+      &__explore{
+        margin-top: 0;
+
+        &--title{
+          font-size: 22px;
+        }
+
+        &--button{
+          width: 40px;
+          height: 40px;
+
+          .arrow{
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px){
+  .home{
+    overflow-y: auto;
+
+    &__clones{
+      top: 600px;
+      width: 85vw;
+      height: 60vw;
+      background-position-x: center;
+      opacity: .7;
+    }
+
+    .container{
+      width: 70vw;
+      margin-left: 15vw;
+      text-align: center;
+      
+      &__description{
+        padding-top: 20px;
+        border-top: 1px solid #ffffff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .home{
+    &__clones{
+      opacity: .3;
+    }
   }
 }
