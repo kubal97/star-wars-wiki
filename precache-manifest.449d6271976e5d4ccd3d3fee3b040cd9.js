@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1501831304a21b3b452eabec9dfa16ef",
+    "revision": "e82adc138b30b9c579727a362765eca5",
     "url": "/star-wars-wiki/index.html"
   },
   {
-    "revision": "5334d2721035b61d57f7",
-    "url": "/star-wars-wiki/static/css/main.bdb5c41e.chunk.css"
+    "revision": "f95f2df5306a817c9f35",
+    "url": "/star-wars-wiki/static/css/main.d42fdf17.chunk.css"
   },
   {
-    "revision": "4cb56c8e978608bf573a",
-    "url": "/star-wars-wiki/static/js/2.6f3817bb.chunk.js"
+    "revision": "f431c751eb9f32c2c98a",
+    "url": "/star-wars-wiki/static/js/2.19c7d877.chunk.js"
   },
   {
-    "revision": "5334d2721035b61d57f7",
-    "url": "/star-wars-wiki/static/js/main.767be028.chunk.js"
+    "revision": "f95f2df5306a817c9f35",
+    "url": "/star-wars-wiki/static/js/main.6353fa70.chunk.js"
   },
   {
     "revision": "94b079bf2ab39f75396d",
