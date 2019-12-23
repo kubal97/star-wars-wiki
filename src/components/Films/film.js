@@ -16,7 +16,7 @@ class Film extends React.Component {
   render() {
     const {image, film} = this.props;
     return (
-      <div>
+      <div className="film__container">
         <a onClick={this.onOpenFilm.bind(this)} className="film">
           <img
             className="film__poster"

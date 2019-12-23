@@ -150,6 +150,7 @@
   .nav{
     .ul{
       margin: 50px 20px;
+      justify-content: center;
 
       li{
         display: none;
@@ -169,32 +170,26 @@
 
       .hamburger{
         display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 70px;
       }
     }
   }
   .nav2{
     position: fixed;
     z-index: 101;
-    right: 10vw;
+    right: 0;
     top: 120px;
 
     .ul2{
       position: relative;
-      width: 100px;
-      height: 250px;
-      top: -200px;
-      border: 2px solid #ffffff;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
       overflow: hidden;
-
-      &:after{
-        content: "";
-        height: 250px;
-        width: 100px;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: rgba(0, 0, 0, 0.9);
-      }
-
+      background-color: rgba(0,0,0,.9);
+      padding: 20px 30px;
 
       li{
         list-style: none;
@@ -210,8 +205,9 @@
         }
 
         .active{
+          padding: 5px 10px;
           color: #E1AA1B;
-          border-bottom: 2px solid #E1AA1B;
+          border-right: 2px solid #E1AA1B;
         }
       }
     }

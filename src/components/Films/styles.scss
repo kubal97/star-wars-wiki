@@ -5,9 +5,9 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
   min-height: 100%;
   overflow: hidden;
+  height: auto;
   background-image: url("../../assets/starsBcg.png");
   display: flex;
   justify-content: center;
@@ -31,26 +31,24 @@
 
   .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 90%;
-    height: 70%;
+    height: auto;
+    max-height: 60vh;
     flex-direction: row;
     color: white;
     border: 3px solid #E1AA1B;
     margin-top: 200px;
+    margin-bottom: 30px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
 
   .films__list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: ". . . ." ". . . .";
-    font-family: 'Neucha';
-    font-size: 25px;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .back{
       display: flex;
@@ -101,6 +99,11 @@
   transform: scale(1);
   transition: transform 0.1s ease-out;
 
+  &__container{
+    width: 350px;
+    height: 400px;
+  }
+
   &:visited{
     text-decoration: none;
   }
@@ -142,6 +145,7 @@
   color: #fff;
   display: flex;
   flex-direction: row;
+  overflow-y: auto;
 
   &__left{
     flex-direction: column;
@@ -170,7 +174,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin: 50px 100px 0 100px;
+      margin: 50px 100px 50px 100px;
 
       .content{
         width: 100%;
@@ -259,4 +263,59 @@
   50% {transform: translate(-10px, 0px);}
   75% {transform: translate(5px, 0px);}
   100% {transform: translate(0px, 0px);}
+}
+
+@media only screen and (max-width: 1200px){
+  .singleFilm{
+    flex-direction: column;
+    align-items: center;
+
+    &__left{
+      width: auto;
+
+      img{
+        width: 30vw;
+        min-width: 200px;
+        height: auto;
+      }
+    }
+
+    &__right{
+      width: 90vw;
+      margin-top: 20px;
+
+      .title{
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .singleFilm{
+    &__right{
+      .title{
+        font-size: 30px;
+      }
+      .containerInfo{
+        margin: 30px 0 50px 0;
+        .content{
+          flex-direction: column;
+
+          .key{
+            margin: 0;
+            width: 100%;
+            font-size: 18px;
+          }
+
+          .value{
+            margin: 0 0 20px 0;
+            width: 100%;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }
