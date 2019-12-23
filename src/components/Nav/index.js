@@ -24,18 +24,32 @@ class Nav extends React.Component {
               <div className="logo__lower">wiki</div>
             </NavLink>
             <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/species">Species</NavLink></li>
-            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/starships">Starships</NavLink></li>
-            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/vehicles">Vehicles</NavLink></li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/starships">Starships</NavLink>
+            </li>
+            <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/vehicles">Vehicles</NavLink>
+            </li>
             <button
-                onClick={() => this.setState({isHamburgerOpen: !this.state.isHamburgerOpen})}
-                className={this.state.isHamburgerOpen ? "hamburger hamburger--emphatic is-active" : "hamburger hamburger--emphatic"}
-                type="button">
-              <span className="hamburger-box">
-                <span className="hamburger-inner"></span>
-              </span>
+              onClick={() => this.setState({isHamburgerOpen: !this.state.isHamburgerOpen})}
+              className={this.state.isHamburgerOpen ? "hamburger hamburger--emphatic is-active" : "hamburger hamburger--emphatic"}
+              type="button">
+            <span className="hamburger-box">
+              <span className="hamburger-inner"></span>
+            </span>
             </button>
           </ul>
         </nav>
+        {this.state.isHamburgerOpen ?
+          <nav className="nav2">
+            <ul onClick={() => this.setState({isHamburgerOpen: false})} className="ul2">
+              <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/films">Films</NavLink></li>
+              <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/people">People</NavLink></li>
+              <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/planets">Planets</NavLink></li>
+              <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/species">Species</NavLink></li>
+              <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/starships">Starships</NavLink></li>
+              <li><NavLink className="item" activeClassName="active" to="/star-wars-wiki/vehicles">Vehicles</NavLink></li>
+            </ul>
+          </nav>
+           : null}
       </div>
     );
   }

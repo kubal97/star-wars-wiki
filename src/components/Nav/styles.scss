@@ -80,7 +80,9 @@
     }
 
     .hamburger:hover {
-      opacity: 0.7; }
+      opacity: 0.7;
+      cursor: pointer;
+    }
     .hamburger.is-active:hover {
       opacity: 0.7; }
     .hamburger.is-active .hamburger-inner,
@@ -147,12 +149,70 @@
 @media only screen and (max-width: 1200px){
   .nav{
     .ul{
-      .item{
+      margin: 50px 20px;
+
+      li{
         display: none;
+      }
+
+      .logo{
+        justify-content: center;
+
+        &__upper{
+          font-size: 40px;
+        }
+
+        &__lower{
+          font-size: 30px;
+        }
       }
 
       .hamburger{
         display: inline-block;
+      }
+    }
+  }
+  .nav2{
+    position: fixed;
+    z-index: 101;
+    right: 10vw;
+    top: 120px;
+
+    .ul2{
+      position: relative;
+      width: 100px;
+      height: 250px;
+      top: -200px;
+      border: 2px solid #ffffff;
+      overflow: hidden;
+
+      &:after{
+        content: "";
+        height: 250px;
+        width: 100px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+
+      li{
+        list-style: none;
+        text-align: right;
+        margin: 10px auto;
+
+        .item{
+          color: #FFFFFF;
+          font-family: 'Neucha';
+          font-size: 25px;
+          font-weight: 300;
+          text-decoration: none;
+        }
+
+        .active{
+          color: #E1AA1B;
+          border-bottom: 2px solid #E1AA1B;
+        }
       }
     }
   }
