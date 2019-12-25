@@ -70,9 +70,10 @@
         transform: scale(1.1);
       }
 
-      &:focus{}
-      outline: none;
-      border: none;
+      &:focus {
+        outline: none;
+        border: none;
+      }
     }
 
     .singlePage{
@@ -115,7 +116,7 @@
   }
 
   &__name{
-    font-family: 'Righteous';
+    font-family: 'Titillium Web';
     font-weight: normal;
     font-size: 25px;
     color: #FFFFFF;
@@ -146,7 +147,7 @@
       }
 
       .value{
-        font-family: 'Righteous';
+        font-family: 'Titillium Web';
         font-weight: normal;
         font-size: 20px;
         width: 80%;

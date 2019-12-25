@@ -106,6 +106,7 @@
   &__item{
     margin: auto 50px;
     white-space: nowrap;
+    font-family: 'Titillium Web';
   }
 }
 
@@ -148,7 +149,7 @@
     .title{
       text-transform: uppercase;
       color: #FFFFFF;
-      font-family: 'Righteous';
+      font-family: 'Titillium Web';
       font-size: 48px;
       text-align: start;
       margin-left: 100px;
@@ -177,7 +178,7 @@
          }
 
         .value{
-          font-family: 'Righteous';
+          font-family: 'Titillium Web';
           font-weight: normal;
           font-size: 25px;
           width: 80%;
