@@ -24,7 +24,6 @@ class Person extends React.Component {
   render() {
     // eslint-disable-next-line react/prop-types
     const {person} = this.props;
-    // eslint-disable-next-line max-len
     return (
       <div className="person">
         {/* eslint-disable-next-line react/prop-types */}

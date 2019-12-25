@@ -54,7 +54,7 @@ class Planet extends React.Component {
           </div>
         </div>
         <div className="planet__info">
-          <div className="person__info--column">
+          <div className="planet__info--column">
             <p className="key">Gravity</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.gravity}</p>
@@ -67,7 +67,7 @@ class Planet extends React.Component {
         </div>
         <div className="planet__info">
           <div className="planet__info--column">
-            <p className="key">Surfacewater:</p>
+            <p className="key">Surface water:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.surface_water}</p>
           </div>
