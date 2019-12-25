@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './styles.scss';
-import Loader from '../../assets/loader.png';
+import Loader from '../Loader';
 import Planet from './planet';
 
 // eslint-disable-next-line require-jsdoc
@@ -86,10 +86,7 @@ class Planets extends React.Component {
       <div className="planets">
         <div className="planets__bcg"/>
         <div className="planets__header" />
-        {this.state.loading ?
-              <div className="loader">
-                <img className="loader__image" src={Loader} alt="loader"/>
-              </div> :
+        {this.state.loading ? <Loader /> :
             <div className="planets__container">
               {planets.map((planet) =>
                 <Planet key={planet.url} planet={planet}/>

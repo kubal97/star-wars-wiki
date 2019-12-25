@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './styles.scss';
 import Person from './person';
-import Loader from '../../assets/loader.png';
+import Loader from '../Loader';
 
 // eslint-disable-next-line require-jsdoc
 class People extends React.Component {
@@ -88,10 +88,7 @@ class People extends React.Component {
       <div className="people">
         <div className="people__bcg"/>
         <div className="people__header" />
-        {this.state.loading ?
-              <div className="loader">
-                <img className="loader__image" src={Loader} alt="loader"/>
-              </div> :
+        {this.state.loading ? <Loader /> :
             <div>
               <div className="people__container">
                 {peoples.map((person) =>

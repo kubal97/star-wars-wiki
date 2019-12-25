@@ -13,22 +13,6 @@
   justify-content: center;
   text-align: center;
 
-  .loader{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    &__image{
-      width: 341px;
-      height: 356px;
-      animation: vibrate-3 1s linear infinite both;
-    }
-  }
-
   .container {
     display: flex;
     align-items: flex-start;
