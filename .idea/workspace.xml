@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da822ff1-adc4-4cd0-904c-36364bbbca7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/People/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/People/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/People/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +26,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,6 +39,9 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kuba\Desktop\star-wars-wiki\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Desktop\FrontEnd\star-wars-wiki\src\components\Home" />
     </key>

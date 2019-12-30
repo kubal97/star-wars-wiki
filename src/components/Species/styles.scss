@@ -1,0 +1,229 @@
+.species{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background-image: url("../../assets/starsBcg.png");
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 0;
+  color: #FFFFFF;
+
+  &__bcg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../../assets/people.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__header{
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    background-color: #000000;
+  }
+
+  &__container{
+    position: relative;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    text-align: start;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+
+    &--button{
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      background-color: #000000;
+      font-size: 25px;
+      font-weight: 600;
+      text-align: left;
+      margin: auto 10px;
+      border: none;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    .singlePage{
+      display: flex;
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto 5px;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+
+    .active{
+      color: #E1AA1B;
+      transform: scale(1.3);
+    }
+  }
+}
+
+.specie{
+  color: #FFFFFF;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-left: 4px solid #E1AA1B;
+  border-right: 4px solid #E1AA1B;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  padding-bottom: 20px;
+
+  &:last-child{
+    margin-bottom: 80px;
+  }
+
+  &__name{
+    font-family: 'Titillium Web';
+    font-weight: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 0 30px;
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+
+    &--column{
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      margin: auto 40px;
+
+      .key{
+        font-family: 'Neucha';
+        font-weight: normal;
+        font-size: 20px;
+        width: 40%;
+        max-width: 40%;
+        color: #FFFFFF;
+        text-align: start;
+        padding-top: 8px;
+      }
+
+      .value{
+        font-family: 'Titillium Web';
+        font-weight: normal;
+        font-size: 20px;
+        width: 60%;
+        max-width: 60%;
+        text-transform: capitalize;
+        line-height: 26px;
+        color: #FFFFFF;
+        text-align: start;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+@keyframes vibrate-3 {
+  0% {transform: translate(0) rotate(3deg);}
+  10% {transform: translate(-2px, -2px);}
+  20% {transform: translate(2px, -2px) rotate(-4deg);}
+  30% {transform: translate(-2px, 2px) rotate(0deg);}
+  40% {transform: translate(2px, 2px);}
+  50% {transform: translate(-2px, -2px) rotate(0deg);}
+  60% {transform: translate(2px, -2px);}
+  70% {transform: translate(-2px, 2px);}
+  80% {transform: translate(-2px, -2px) rotate(5deg);}
+  90% {transform: translate(2px, -2px);}
+  100% {transform: translate(0) rotate(0deg);}
+}
+
+@media only screen and (max-width: 1100px){
+  .specie{
+    margin-bottom: 50px;
+
+    &__info{
+      flex-direction: column;
+      height: auto;
+
+      &--column{
+        width: 80%;
+
+        .key{
+          font-size: 18px;
+        }
+
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .species{
+      &__page{
+        &--button{
+          font-size: 20px;
+        }
+      }
+
+      .singlePage{
+        font-size: 18px;
+      }
+  }
+
+  .specie{
+    &__info{
+      &--column{
+        flex-direction: column;
+        margin-bottom: 5px;
+
+        .key{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
