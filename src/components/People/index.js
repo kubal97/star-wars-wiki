@@ -28,7 +28,6 @@ class People extends React.Component {
             peoples: response.data.results,
             count: response.data.count,
           });
-          console.log(this.state.peoples);
         });
   }
 
