@@ -89,7 +89,7 @@ class People extends React.Component {
         <div className="people__bcg"/>
         <div className="people__header" />
         {this.state.loading ? <Loader /> :
-            <div>
+            <div style={{width: '80%'}}>
               <div className="people__container">
                 {peoples.map((person) =>
                   <Person key={person.url} person={person} />
