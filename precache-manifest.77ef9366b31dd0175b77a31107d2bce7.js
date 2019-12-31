@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8fffc396c471595fa15f399e4cfb89f9",
+    "revision": "2370e44b7cd2409ac2320912b49bcace",
     "url": "/star-wars-wiki/index.html"
   },
   {
-    "revision": "3466905ed32009f51de7",
-    "url": "/star-wars-wiki/static/css/main.23563c7e.chunk.css"
+    "revision": "2762cbb71e76d960b883",
+    "url": "/star-wars-wiki/static/css/main.58bb818b.chunk.css"
   },
   {
-    "revision": "815dbd5b2f26ff62d606",
-    "url": "/star-wars-wiki/static/js/2.c7f365b9.chunk.js"
+    "revision": "a9f25b4c7fa25ff7af17",
+    "url": "/star-wars-wiki/static/js/2.eaab9b7a.chunk.js"
   },
   {
-    "revision": "3466905ed32009f51de7",
-    "url": "/star-wars-wiki/static/js/main.e1527723.chunk.js"
+    "revision": "2762cbb71e76d960b883",
+    "url": "/star-wars-wiki/static/js/main.851e819b.chunk.js"
   },
   {
     "revision": "94b079bf2ab39f75396d",
     "url": "/star-wars-wiki/static/js/runtime-main.52d59acf.js"
   },
   {
-    "revision": "e1dd3c8bcb60c8bc2ecddc0a46017942",
-    "url": "/star-wars-wiki/static/media/1.e1dd3c8b.png"
+    "revision": "714f9c19e0f08da148160a5cfc706bae",
+    "url": "/star-wars-wiki/static/media/1.714f9c19.png"
   },
   {
     "revision": "48df9778a694e02df8bbcced9cf42e62",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star-wars-wiki/static/media/3.7ed009af.jpg"
   },
   {
-    "revision": "8addba9bbe507705724a0f13a6d57d21",
-    "url": "/star-wars-wiki/static/media/4.8addba9b.png"
+    "revision": "2bc4d307a47efcf838ef949b51400bd0",
+    "url": "/star-wars-wiki/static/media/4.2bc4d307.png"
   },
   {
-    "revision": "4c968f7e33d28d0c60bd0437b9753ce9",
-    "url": "/star-wars-wiki/static/media/5.4c968f7e.png"
+    "revision": "d3ce952a4118ca24e76a29efa75f6245",
+    "url": "/star-wars-wiki/static/media/5.d3ce952a.png"
   },
   {
-    "revision": "dc159e323f7ef7a7bcc3c23b328dba46",
-    "url": "/star-wars-wiki/static/media/6.dc159e32.png"
+    "revision": "1073276adbe5b5ae125c1dd4fa492feb",
+    "url": "/star-wars-wiki/static/media/6.1073276a.png"
   },
   {
     "revision": "238579d4509d0080f9a1063dda375331",
