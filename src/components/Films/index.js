@@ -50,7 +50,7 @@ class Films extends React.Component {
     // const sortDates =(a, b) => moment(a.release_date, 'YYYY-MM-DD') -moment(b.release_date, 'YYYY-MM-DD');
     return (
       <div className="films">
-        {this.state.loading ? <Loader /> : null}
+        {this.state.loading ? <Loader /> :
         <div className="container">
           {!isLoaded ?
               null :
@@ -71,7 +71,7 @@ class Films extends React.Component {
                 </Link>
               </div>
           }
-        </div>
+        </div>}
       </div>
     );
   }

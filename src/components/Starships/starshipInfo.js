@@ -64,7 +64,7 @@ class StarshipInfo extends React.Component {
               <p className="value">{details.MGLT}</p>
             </div>
             <div className="content">
-              <Link onClick={isStarshipOpen} className="back" to="/star-wars-wiki/spaceship">
+              <Link onClick={isStarshipOpen} className="back" to="/star-wars-wiki/starships">
                 <button className="back__button">
                   <img
                     className="arrow"

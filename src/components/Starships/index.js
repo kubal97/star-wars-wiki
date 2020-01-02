@@ -93,9 +93,10 @@ class Starships extends React.Component {
     // eslint-disable-next-line max-len
     return (
       <div className="starships">
-        {this.state.loading ? <Loader /> : null}
-        <div ref={this.myRef} className="container">
-          {!isLoaded ?
+        {this.state.loading ? <Loader /> :
+          <div>
+            <div ref={this.myRef} className="container">
+              {!isLoaded ?
             null :
             // eslint-disable-next-line max-len
             <div className="starships__list">
@@ -103,7 +104,7 @@ class Starships extends React.Component {
                 // eslint-disable-next-line max-len,react/jsx-key
                 <Starship key={starship.url} starship={starship} image={First} />,
               )}
-              <Link className="starship back" to="/star-wars-wiki/">
+              <Link className="back" to="/star-wars-wiki/">
                 <button className="back__button">
                   <img
                     className="arrow"
@@ -113,18 +114,19 @@ class Starships extends React.Component {
                 <p className="back__title">Go back</p>
               </Link>
             </div>
-          }
-        </div>
-        <div className="people__page">
-          <button
-            onClick={() => this.onPreviousPage()}
-            className="people__page--button">Previous</button>
-          {this.onCurrentPage()}
-          {/* eslint-disable-next-line react/no-string-refs */}
-          <button
-            onClick={() => this.onNextPage()}
-            className="people__page--button">Next</button>
-        </div>
+              }
+            </div>
+            <div className="people__page">
+              <button
+                onClick={() => this.onPreviousPage()}
+                className="people__page--button">Previous</button>
+              {this.onCurrentPage()}
+              {/* eslint-disable-next-line react/no-string-refs */}
+              <button
+                onClick={() => this.onNextPage()}
+                className="people__page--button">Next</button>
+            </div>
+          </div>}
       </div>
     );
   }

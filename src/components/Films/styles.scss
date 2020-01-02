@@ -5,13 +5,14 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
   background-image: url("../../assets/starsBcg.png");
   display: flex;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
 
   .container {
     display: flex;
@@ -22,7 +23,8 @@
     flex-direction: row;
     color: white;
     border: 3px solid #E1AA1B;
-    margin-top: 200px;
+    margin: auto;
+    margin-top: 150px;
     margin-bottom: 30px;
     border-radius: 10px;
     overflow-x: hidden;
@@ -71,6 +73,58 @@
       }
     }
   }
+
+  &__page{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+
+    &--button{
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      background-color: #000000;
+      font-size: 25px;
+      font-weight: 600;
+      text-align: left;
+      margin: auto 10px;
+      border: none;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+
+    .singlePage{
+      display: flex;
+      color: #FFFFFF;
+      font-family: 'Neucha';
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+      justify-content: center;
+      align-items: center;
+      margin: auto 5px;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    }
+
+    .active{
+      color: #E1AA1B;
+      transform: scale(1.3);
+    }
+  }
 }
 
 .film{
@@ -105,11 +159,9 @@
 
   &__item{
     margin: auto 50px;
-    white-space: nowrap;
     font-family: 'Titillium Web';
   }
 }
-
 
 .singleFilm{
   position: absolute;
@@ -117,16 +169,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   background:
-    linear-gradient(
-                    rgba(0, 0, 0, 0.9),
-                    rgba(0, 0, 0, 0.9)
-    ),
-    url("../../assets/film-description.jpg");
+          linear-gradient(
+                          rgba(0, 0, 0, 0.9),
+                          rgba(0, 0, 0, 0.9)
+          ),
+          url("../../assets/film-description.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 200px;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -135,9 +187,10 @@
   &__left{
     flex-direction: column;
     width: 30vw;
+    margin-top: 200px;
 
     img{
-      height: 500px;
+      height: 400px;
       width: auto;
     }
   }
@@ -145,6 +198,7 @@
   &__right{
     flex-direction: column;
     width: 70vw;
+    margin-top: 200px;
 
     .title{
       text-transform: uppercase;
@@ -168,15 +222,15 @@
         justify-content: flex-end;
 
         .key{
-           font-family: 'Neucha';
-           font-weight: normal;
-           font-size: 20px;
-           width: 20%;
-           color: #FFFFFF;
-           text-align: start;
-           padding-top: 10px;
+          font-family: 'Neucha';
+          font-weight: normal;
+          font-size: 20px;
+          width: 20%;
+          color: #FFFFFF;
+          text-align: start;
+          padding-top: 10px;
           margin: 0;
-         }
+        }
 
         .value{
           font-family: 'Titillium Web';
