@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="da822ff1-adc4-4cd0-904c-36364bbbca7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Planets/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Planets/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Starships/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Starships/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Starships/starshipInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Starships/starshipInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Starships/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Starships/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +91,7 @@
       <workItem from="1577131763901" duration="693000" />
       <workItem from="1577284012883" duration="7992000" />
       <workItem from="1577801529914" duration="4623000" />
-      <workItem from="1577974800784" duration="4636000" />
+      <workItem from="1577974800784" duration="6078000" />
     </task>
     <servers />
   </component>

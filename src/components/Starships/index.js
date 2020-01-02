@@ -4,8 +4,47 @@ import './styles.scss';
 import Loader from '../Loader';
 import {Link} from 'react-router-dom';
 import arrowLeft from '../../assets/arrow-left.png';
-import First from '../../assets/1.png';
 import Starship from './starship';
+import sp1 from '../../assets/starship1.png';
+import sp2 from '../../assets/starship2.png';
+import sp3 from '../../assets/starship3.png';
+import sp4 from '../../assets/starship4.png';
+import sp5 from '../../assets/starship5.png';
+import sp6 from '../../assets/starship6.png';
+import sp7 from '../../assets/starship7.png';
+import sp8 from '../../assets/starship8.png';
+import sp9 from '../../assets/starship9.png';
+import sp10 from '../../assets/starship10.png';
+import sp11 from '../../assets/starship11.png';
+import sp12 from '../../assets/starship12.png';
+import sp13 from '../../assets/starship13.png';
+import sp14 from '../../assets/starship14.png';
+import sp15 from '../../assets/starship15.png';
+import sp16 from '../../assets/starship16.png';
+import sp17 from '../../assets/starship17.png';
+import sp18 from '../../assets/starship18.png';
+import sp19 from '../../assets/starship19.png';
+import sp20 from '../../assets/starship20.png';
+import sp21 from '../../assets/starship21.png';
+import sp22 from '../../assets/starship22.png';
+import sp23 from '../../assets/starship23.png';
+import sp24 from '../../assets/starship24.png';
+import sp25 from '../../assets/starship25.png';
+import sp26 from '../../assets/starship26.png';
+import sp27 from '../../assets/starship27.png';
+import sp28 from '../../assets/starship28.png';
+import sp29 from '../../assets/starship29.png';
+import sp30 from '../../assets/starship30.png';
+import sp31 from '../../assets/starship31.png';
+import sp32 from '../../assets/starship32.png';
+import sp33 from '../../assets/starship33.png';
+import sp34 from '../../assets/starship34.png';
+import sp35 from '../../assets/starship35.png';
+import sp36 from '../../assets/starship36.png';
+import sp37 from '../../assets/starship37.png';
+
+// eslint-disable-next-line max-len
+const images = [sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15, sp16, sp17, sp18, sp19, sp20, sp21, sp22, sp23, sp24, sp25, sp26, sp27, sp28, sp29, sp30, sp31, sp32, sp33, sp34, sp35, sp36, sp37];
 
 // eslint-disable-next-line require-jsdoc
 class Starships extends React.Component {
@@ -100,9 +139,9 @@ class Starships extends React.Component {
             null :
             // eslint-disable-next-line max-len
             <div className="starships__list">
-              {starships.map((starship) =>
+              {starships.map((starship, index) =>
                 // eslint-disable-next-line max-len,react/jsx-key
-                <Starship key={starship.url} starship={starship} image={First} />,
+                <Starship key={starship.url} starship={starship} image={images[index+1]} />,
               )}
               <Link className="back" to="/star-wars-wiki/">
                 <button className="back__button">
