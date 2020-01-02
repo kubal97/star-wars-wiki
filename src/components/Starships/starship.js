@@ -15,7 +15,6 @@ class Starship extends React.Component {
   }
   render() {
     const {image, starship} = this.props;
-    console.log(starship);
     return (
       <div className="starship__container">
         <a onClick={this.onOpenStarship.bind(this)} className="starship">

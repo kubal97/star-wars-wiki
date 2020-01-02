@@ -128,7 +128,6 @@ class Starships extends React.Component {
   // eslint-disable-next-line require-jsdoc
   render() {
     const {starships, isLoaded} = this.state;
-    console.log(starships);
     // eslint-disable-next-line max-len
     return (
       <div className="starships">
