@@ -61,7 +61,7 @@ class Starships extends React.Component {
     };
   }
   // eslint-disable-next-line require-jsdoc
-  onLoadPeoples() {
+  onLoadStarships() {
     this.setState({loading: true});
     axios.get(`https://swapi.co/api/starships/?page=${this.state.current}`)
         .then((response) => {
@@ -83,7 +83,7 @@ class Starships extends React.Component {
         current: this.state.current + 1,
       }, () => {
         this.myRef.current.scrollTo(0, 0);
-        this.onLoadPeoples();
+        this.onLoadStarships();
       });
     } else alert('There is no next page!');
   }
@@ -94,7 +94,7 @@ class Starships extends React.Component {
         current: this.state.current - 1,
       }, () => {
         this.myRef.current.scrollTo(0, 0);
-        this.onLoadPeoples();
+        this.onLoadStarships();
       });
     } else alert('There is no previous page!');
   }
@@ -109,7 +109,7 @@ class Starships extends React.Component {
             current: i,
           }, () => {
             this.myRef.current.scrollTo(0, 0);
-            this.onLoadPeoples();
+            this.onLoadStarships();
           });
         }}
         id={i}
@@ -122,7 +122,7 @@ class Starships extends React.Component {
   }
   // eslint-disable-next-line require-jsdoc
   componentDidMount() {
-    this.onLoadPeoples();
+    this.onLoadStarships();
   }
 
   // eslint-disable-next-line require-jsdoc

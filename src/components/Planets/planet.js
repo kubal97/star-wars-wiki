@@ -25,52 +25,52 @@ class Planet extends React.Component {
     // eslint-disable-next-line react/prop-types
     const {planet} = this.props;
     return (
-      <div className="specie">
+      <div className="planet">
         {/* eslint-disable-next-line react/prop-types */}
-        <h2 className="specie__name">{planet.name}</h2>
-        <div className="specie__info">
-          <div className="specie__info--column">
+        <h2 className="planet__name">{planet.name}</h2>
+        <div className="planet__info">
+          <div className="planet__info--column">
             <p className="key">Rotation period:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.rotation_period}</p>
           </div>
-          <div className="specie__info--column">
+          <div className="planet__info--column">
             <p className="key">Orbital period:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.orbital_period}</p>
           </div>
         </div>
-        <div className="specie__info">
-          <div className="specie__info--column">
+        <div className="planet__info">
+          <div className="planet__info--column">
             <p className="key">Diameter:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.diameter}</p>
           </div>
-          <div className="specie__info--column">
+          <div className="planet__info--column">
             <p className="key">Climate:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.climate}</p>
           </div>
         </div>
-        <div className="specie__info">
-          <div className="specie__info--column">
+        <div className="planet__info">
+          <div className="planet__info--column">
             <p className="key">Gravity:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.gravity}</p>
           </div>
-          <div className="specie__info--column">
+          <div className="planet__info--column">
             <p className="key">Terrain:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.terrain}</p>
           </div>
         </div>
-        <div className="specie__info">
-          <div className="specie__info--column">
+        <div className="planet__info">
+          <div className="planet__info--column">
             <p className="key">Surface water:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.surface_water}</p>
           </div>
-          <div className="person__info--column">
+          <div className="planet__info--column">
             <p className="key">Population:</p>
             {/* eslint-disable-next-line react/prop-types */}
             <p className="value">{planet.population}</p>

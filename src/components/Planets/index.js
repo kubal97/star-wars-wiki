@@ -84,25 +84,25 @@ class Planets extends React.Component {
     const {planets} = this.state;
     // eslint-disable-next-line max-len
     return (
-      <div className="species">
-        <div className="species__bcg"/>
-        <div className="species__header" />
+      <div className="planets">
+        <div className="planets__bcg"/>
+        <div className="planets__header" />
         {this.state.loading ? <Loader /> :
             <div style={{width: '80%'}}>
-              <div className="species__container">
+              <div className="planets__container">
                 {planets.map((planet) =>
                   <Planet key={planet.url} planet={planet} />
                 )}
               </div>
-              <div className="species__page">
+              <div className="planets__page">
                 <button
                   onClick={() => this.onPreviousPage()}
-                  className="species__page--button">Previous</button>
+                  className="planets__page--button">Previous</button>
                 {this.onCurrentPage()}
                 {/* eslint-disable-next-line react/no-string-refs */}
                 <button
                   onClick={() => this.onNextPage()}
-                  className="species__page--button">Next</button>
+                  className="planets__page--button">Next</button>
               </div>
             </div>
         }

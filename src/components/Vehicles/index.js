@@ -5,7 +5,7 @@ import Vehicle from './vehicle';
 import Loader from '../Loader';
 
 // eslint-disable-next-line require-jsdoc
-class Species extends React.Component {
+class Vehicles extends React.Component {
   // eslint-disable-next-line require-jsdoc
   constructor(props) {
     super(props);
@@ -18,7 +18,7 @@ class Species extends React.Component {
     };
   }
   // eslint-disable-next-line require-jsdoc
-  onLoadPeoples() {
+  onLoadVehicles() {
     this.setState({loading: true});
     axios.get(`https://swapi.co/api/vehicles/?page=${this.state.current}`)
         .then((response) => {
@@ -39,7 +39,7 @@ class Species extends React.Component {
       this.setState({
         current: this.state.current + 1,
       }, () => {
-        this.onLoadPeoples();
+        this.onLoadVehicles();
       });
     } else alert('There is no next page!');
   }
@@ -49,7 +49,7 @@ class Species extends React.Component {
       this.setState({
         current: this.state.current - 1,
       }, () => {
-        this.onLoadPeoples();
+        this.onLoadVehicles();
       });
     } else alert('There is no previous page!');
   }
@@ -63,7 +63,7 @@ class Species extends React.Component {
           this.setState({
             current: i,
           }, () => {
-            this.onLoadPeoples();
+            this.onLoadVehicles();
           });
         }}
         id={i}
@@ -76,7 +76,7 @@ class Species extends React.Component {
   }
   // eslint-disable-next-line require-jsdoc
   componentDidMount() {
-    this.onLoadPeoples();
+    this.onLoadVehicles();
   }
 
   // eslint-disable-next-line require-jsdoc
@@ -84,25 +84,25 @@ class Species extends React.Component {
     const {vehicles} = this.state;
     // eslint-disable-next-line max-len
     return (
-      <div className="species">
-        <div className="species__bcg"/>
-        <div className="species__header" />
+      <div className="vehicles">
+        <div className="vehicles__bcg"/>
+        <div className="vehicles__header" />
         {this.state.loading ? <Loader /> :
             <div style={{width: '80%'}}>
-              <div className="species__container">
+              <div className="vehicles__container">
                 {vehicles.map((vehicle) =>
                   <Vehicle key={vehicle.url} vehicle={vehicle} />
                 )}
               </div>
-              <div className="species__page">
+              <div className="vehicles__page">
                 <button
                   onClick={() => this.onPreviousPage()}
-                  className="species__page--button">Previous</button>
+                  className="vehicles__page--button">Previous</button>
                 {this.onCurrentPage()}
                 {/* eslint-disable-next-line react/no-string-refs */}
                 <button
                   onClick={() => this.onNextPage()}
-                  className="species__page--button">Next</button>
+                  className="vehicles__page--button">Next</button>
               </div>
             </div>
         }
@@ -110,4 +110,4 @@ class Species extends React.Component {
     );
   }
 }
-export default Species;
+export default Vehicles;

@@ -1,4 +1,4 @@
-.species{
+.planets{
   position: absolute;
   top: 0;
   left: 0;
@@ -100,7 +100,7 @@
   }
 }
 
-.specie{
+.planet{
   color: #FFFFFF;
   width: 100%;
   max-width: 1000px;
@@ -179,7 +179,7 @@
 }
 
 @media only screen and (max-width: 1100px){
-  .specie{
+  .planet{
     margin-bottom: 50px;
 
     &__info{
@@ -202,7 +202,7 @@
 }
 
 @media only screen and (max-width: 500px){
-  .species{
+  .planets{
       &__page{
         &--button{
           font-size: 20px;
@@ -214,7 +214,7 @@
       }
   }
 
-  .specie{
+  .planet{
     &__info{
       &--column{
         flex-direction: column;

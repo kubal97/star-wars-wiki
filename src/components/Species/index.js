@@ -18,7 +18,7 @@ class Species extends React.Component {
     };
   }
   // eslint-disable-next-line require-jsdoc
-  onLoadPeoples() {
+  onLoadSpecies() {
     this.setState({loading: true});
     axios.get(`https://swapi.co/api/species/?page=${this.state.current}`)
         .then((response) => {
@@ -39,7 +39,7 @@ class Species extends React.Component {
       this.setState({
         current: this.state.current + 1,
       }, () => {
-        this.onLoadPeoples();
+        this.onLoadSpecies();
       });
     } else alert('There is no next page!');
   }
@@ -49,7 +49,7 @@ class Species extends React.Component {
       this.setState({
         current: this.state.current - 1,
       }, () => {
-        this.onLoadPeoples();
+        this.onLoadSpecies();
       });
     } else alert('There is no previous page!');
   }
@@ -63,7 +63,7 @@ class Species extends React.Component {
           this.setState({
             current: i,
           }, () => {
-            this.onLoadPeoples();
+            this.onLoadSpecies();
           });
         }}
         id={i}
@@ -76,7 +76,7 @@ class Species extends React.Component {
   }
   // eslint-disable-next-line require-jsdoc
   componentDidMount() {
-    this.onLoadPeoples();
+    this.onLoadSpecies();
   }
 
   // eslint-disable-next-line require-jsdoc
