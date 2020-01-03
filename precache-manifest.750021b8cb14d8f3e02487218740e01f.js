@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d503b84ed259377c387166247d73e13",
+    "revision": "bff2d1b8ae7a9dd33cbb869c8c16e318",
     "url": "/star-wars-wiki/index.html"
   },
   {
-    "revision": "6ba5dc096bc77b6f06c7",
-    "url": "/star-wars-wiki/static/css/main.c5958e31.chunk.css"
+    "revision": "484e0527e0746a39a1e6",
+    "url": "/star-wars-wiki/static/css/main.f1224854.chunk.css"
   },
   {
-    "revision": "bfebcff0a9e4d8da99b8",
-    "url": "/star-wars-wiki/static/js/2.6e1798f8.chunk.js"
+    "revision": "3ad06bc55c79f1ae6e04",
+    "url": "/star-wars-wiki/static/js/2.30ddb166.chunk.js"
   },
   {
-    "revision": "6ba5dc096bc77b6f06c7",
-    "url": "/star-wars-wiki/static/js/main.b667da8d.chunk.js"
+    "revision": "484e0527e0746a39a1e6",
+    "url": "/star-wars-wiki/static/js/main.6ec0c78f.chunk.js"
   },
   {
     "revision": "94b079bf2ab39f75396d",
@@ -64,12 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star-wars-wiki/static/media/people.5427d0b6.png"
   },
   {
-    "revision": "0c4218b94f9b4a5bc1ea1a5b4074e9b0",
-    "url": "/star-wars-wiki/static/media/planets.0c4218b9.jpg"
-  },
-  {
-    "revision": "136469fc46abf363bbeef7de2de62fa5",
-    "url": "/star-wars-wiki/static/media/starsBcg.136469fc.png"
+    "revision": "0e0f1ce5ee83eb697210e7c31f9a3b28",
+    "url": "/star-wars-wiki/static/media/starsBcg.0e0f1ce5.png"
   },
   {
     "revision": "e9ce14f709b1a89c8ef756a89af44a95",
@@ -92,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star-wars-wiki/static/media/starship13.19471447.png"
   },
   {
-    "revision": "6c9101409003c92f4ec0ddcf122165c8",
-    "url": "/star-wars-wiki/static/media/starship14.6c910140.png"
+    "revision": "5587326685be5d0cecef85371fa32912",
+    "url": "/star-wars-wiki/static/media/starship14.55873266.png"
   },
   {
     "revision": "baf738eaf47261141931cd7af485247b",
@@ -112,16 +108,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star-wars-wiki/static/media/starship18.b50b66ef.png"
   },
   {
-    "revision": "036c3928b71b46c2f82ff45c557d0f53",
-    "url": "/star-wars-wiki/static/media/starship19.036c3928.png"
+    "revision": "5948071574a6204a615781d1337d9758",
+    "url": "/star-wars-wiki/static/media/starship19.59480715.png"
   },
   {
     "revision": "689126930630e5a02df9d4bdc4df36eb",
     "url": "/star-wars-wiki/static/media/starship2.68912693.png"
   },
   {
-    "revision": "9489a5c2771d8e5c056de8ae37b50cee",
-    "url": "/star-wars-wiki/static/media/starship20.9489a5c2.png"
+    "revision": "0d195b2c326cf7c4cc91ce7aec0f7407",
+    "url": "/star-wars-wiki/static/media/starship20.0d195b2c.png"
   },
   {
     "revision": "0c0e6fe1b5939a9820b7b7d1d1478a8b",
@@ -180,6 +176,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/star-wars-wiki/static/media/starship33.bcd9aa6b.png"
   },
   {
+    "revision": "3074478f61f886e95d5afc46213af097",
+    "url": "/star-wars-wiki/static/media/starship34.3074478f.png"
+  },
+  {
     "revision": "ba71bb28666daa63e0618eda10ab6cbe",
     "url": "/star-wars-wiki/static/media/starship35.ba71bb28.png"
   },
@@ -218,9 +218,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7fc98777aa959096c0ad888a23631b4f",
     "url": "/star-wars-wiki/static/media/starships.7fc98777.png"
-  },
-  {
-    "revision": "0e0f1ce5ee83eb697210e7c31f9a3b28",
-    "url": "/star-wars-wiki/static/media/test.0e0f1ce5.png"
   }
 ]);
