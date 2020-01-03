@@ -42,6 +42,7 @@
       align-items: center;
       text-decoration: none;
       justify-content: center;
+      width: 350px;
 
       &:hover{
         .arrow {
@@ -137,6 +138,15 @@
   transform: scale(1);
   transition: transform 0.1s ease-out;
 
+  .cont{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
   &__container{
     width: 350px;
     height: 400px;
@@ -153,7 +163,9 @@
 
   &__poster{
     width: auto;
-    height: 200px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     margin: 20px auto;
   }
 
@@ -186,8 +198,8 @@
     margin-top: 200px;
 
     img{
-      height: 400px;
-      width: auto;
+      width: 350px;
+      height: auto;
     }
   }
 

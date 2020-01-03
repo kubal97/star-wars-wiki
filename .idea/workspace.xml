@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="da822ff1-adc4-4cd0-904c-36364bbbca7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Films/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Films/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/starship14.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/starship14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/starship19.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/starship19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/starship20.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/starship20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/starship34.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/starship34.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Starships/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Starships/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Starships/starship.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Starships/starship.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Starships/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Starships/styles.scss" afterDir="false" />
@@ -94,7 +97,8 @@
       <workItem from="1577131763901" duration="693000" />
       <workItem from="1577284012883" duration="7992000" />
       <workItem from="1577801529914" duration="4623000" />
-      <workItem from="1577974800784" duration="7074000" />
+      <workItem from="1577974800784" duration="7205000" />
+      <workItem from="1578066195777" duration="2554000" />
     </task>
     <servers />
   </component>

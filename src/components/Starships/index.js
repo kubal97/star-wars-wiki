@@ -140,7 +140,7 @@ class Starships extends React.Component {
             <div className="starships__list">
               {starships.map((starship, index) =>
                 // eslint-disable-next-line max-len,react/jsx-key
-                <Starship key={starship.url} starship={starship} image={images[index+1]} />,
+                <Starship key={starship.url} starship={starship} image={images[(this.state.current-1)*10+(index)]} />,
               )}
               <Link className="back" to="/star-wars-wiki/">
                 <button className="back__button">
