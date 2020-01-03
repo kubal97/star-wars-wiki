@@ -9,6 +9,7 @@ import People from './components/People';
 import Planets from './components/Planets';
 import Species from './components/Species';
 import Starships from './components/Starships';
+import Vehicles from './components/Vehicles';
 // eslint-disable-next-line require-jsdoc
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/star-wars-wiki/planets" component={Planets} />
         <Route exact path="/star-wars-wiki/species" component={Species} />
         <Route exact path="/star-wars-wiki/starships" component={Starships} />
+        <Route exact path="/star-wars-wiki/vehicles" component={Vehicles} />
       </Switch>
     </Router>
   );

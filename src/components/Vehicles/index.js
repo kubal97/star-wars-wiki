@@ -1,31 +1,31 @@
 import React from 'react';
 import axios from 'axios';
 import './styles.scss';
-import Planet from './planet';
+import Vehicle from './vehicle';
 import Loader from '../Loader';
 
 // eslint-disable-next-line require-jsdoc
-class Planets extends React.Component {
+class Species extends React.Component {
   // eslint-disable-next-line require-jsdoc
   constructor(props) {
     super(props);
     this.state = {
       loading: true,
       isLoaded: false,
-      planets: [],
+      vehicles: [],
       count: 0,
       current: 1,
     };
   }
   // eslint-disable-next-line require-jsdoc
-  onLoadPlanets() {
+  onLoadPeoples() {
     this.setState({loading: true});
-    axios.get(`https://swapi.co/api/planets/?page=${this.state.current}`)
+    axios.get(`https://swapi.co/api/vehicles/?page=${this.state.current}`)
         .then((response) => {
           this.setState({
             loading: false,
             isLoaded: true,
-            planets: response.data.results,
+            vehicles: response.data.results,
             count: response.data.count,
           });
         });
@@ -39,7 +39,7 @@ class Planets extends React.Component {
       this.setState({
         current: this.state.current + 1,
       }, () => {
-        this.onLoadPlanets();
+        this.onLoadPeoples();
       });
     } else alert('There is no next page!');
   }
@@ -49,7 +49,7 @@ class Planets extends React.Component {
       this.setState({
         current: this.state.current - 1,
       }, () => {
-        this.onLoadPlanets();
+        this.onLoadPeoples();
       });
     } else alert('There is no previous page!');
   }
@@ -63,7 +63,7 @@ class Planets extends React.Component {
           this.setState({
             current: i,
           }, () => {
-            this.onLoadPlanets();
+            this.onLoadPeoples();
           });
         }}
         id={i}
@@ -76,12 +76,12 @@ class Planets extends React.Component {
   }
   // eslint-disable-next-line require-jsdoc
   componentDidMount() {
-    this.onLoadPlanets();
+    this.onLoadPeoples();
   }
 
   // eslint-disable-next-line require-jsdoc
   render() {
-    const {planets} = this.state;
+    const {vehicles} = this.state;
     // eslint-disable-next-line max-len
     return (
       <div className="species">
@@ -90,8 +90,8 @@ class Planets extends React.Component {
         {this.state.loading ? <Loader /> :
             <div style={{width: '80%'}}>
               <div className="species__container">
-                {planets.map((planet) =>
-                  <Planet key={planet.url} planet={planet} />
+                {vehicles.map((vehicle) =>
+                  <Vehicle key={vehicle.url} vehicle={vehicle} />
                 )}
               </div>
               <div className="species__page">
@@ -110,4 +110,4 @@ class Planets extends React.Component {
     );
   }
 }
-export default Planets;
+export default Species;

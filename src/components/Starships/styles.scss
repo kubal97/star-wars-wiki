@@ -1,18 +1,23 @@
 .starships{
-  position: absolute;
-  top: 0;
-  left: 0;
   margin: 0;
   padding: 0;
-  width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100%;
-  background-image: url("../../assets/starsBcg.png");
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  position: fixed;
+  z-index: -1;
+  background-image: url("../../assets/test.png");
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  animation: animate 50s linear infinite;
 
   .container {
     display: flex;
@@ -290,6 +295,15 @@
         }
       }
     }
+  }
+}
+
+@keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
   }
 }
 
